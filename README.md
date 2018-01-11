@@ -34,3 +34,9 @@ bash -c "bash <(curl https://raw.githubusercontent.com/JonathanGawrych/cryptonot
 ```
 bash -c "bash <(curl https://raw.githubusercontent.com/JonathanGawrych/cryptonote-mining-setup/master/run_sumo.sh)"
 ```
+
+#### Nicehash
+
+```
+bash -c "bash <(curl https://raw.githubusercontent.com/JonathanGawrych/cryptonote-mining-setup/master/run_nice.sh)"
+```
