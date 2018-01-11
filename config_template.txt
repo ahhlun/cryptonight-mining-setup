@@ -14,7 +14,7 @@
 "pool_list": [
     {
         "pool_address": "POOLURLANDPORT",
-        "wallet_address": "WALLETADDRESSWORKERSEPERATORHOSTNAME",
+        "wallet_address": "WALLETADDRESSWORKERSEPERATORWORKERID",
         "pool_password": "x",
         "use_nicehash": false,
         "use_tls": false,
