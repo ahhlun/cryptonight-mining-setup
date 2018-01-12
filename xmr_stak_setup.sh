@@ -7,5 +7,5 @@ echo -e "#pragma once\nconstexpr double fDevDonationLevel = 0;" > xmrstak/donate
 cmake . -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
 make install
 cd bin/
-wget https://raw.githubusercontent.com/JonathanGawrych/cryptonight-mining-setup/master/cpu.txt
+curl https://raw.githubusercontent.com/JonathanGawrych/cryptonight-mining-setup/master/cpu.txt > cpu.txt
 sudo sysctl -w vm.nr_hugepages=128
