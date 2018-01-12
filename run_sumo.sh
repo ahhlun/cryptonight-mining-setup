@@ -9,5 +9,5 @@ NODEIDSTRIP="${AZ_BATCH_NODE_ID//[^a-zA-Z0-9]/}"
 NODEIDLIMIT="${NODEIDSTRIP:0:13}N${NODEIDSTRIP:13:1}"
 sed -i "s/WORKERID/$NODEIDLIMIT/" config.txt
 sudo sed -i 's/USENICEHASH/false/' config.txt
-rm -f xmr.log
+rm -f status.log
 ./xmr-stak
