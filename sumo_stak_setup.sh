@@ -17,9 +17,9 @@ NODEIDSTRIP=$(sed 's/-[^_]*$//' <<< "$AZ_BATCH_NODE_ID")
 NODEIDSTRIP="${NODEIDSTRIP:4}"
 NODEIDSTRIP="${NODEIDSTRIP/_/N}"
 sed -i "s/NODEID/$NODEIDSTRIP/g" /etc/profile.d/host_to_id.sh
-sed -i 's/POOLURLANDPORT/pool.minexmr.com:7777/' config.txt
-sed -i 's/WALLETADDRESS/45VShUov9o2dKyyXAXxXZkL2LDb9mwcpoAAfPPjJHNKcADU8J6hq57ZiijB1DSGMfn3uJz5URn16TZGw9p74sKjoFRGDcJ1/' config.txt
-sed -i 's/WORKERSEPERATOR/./' config.txt
+sed -i 's/POOLURLANDPORT/mine.sumo.fairpool.xyz:5555/' config.txt
+sed -i 's/WALLETADDRESS/Sumoo1oyPB3Ksk4Um1rWk5G7HLk2EGKsH1LJi3tRUy5NHMgfyXcLyzrXLiUKcGCWzw42atGWJ7UtHerDdo7t65rLgYa2u2ZUgxv/' config.txt
+sed -i 's/WORKERSEPERATOR/+/' config.txt
 sed -i "s/WORKERID/$NODEIDSTRIP/" config.txt
 sed -i 's/USENICEHASH/false/' config.txt
 ./xmr-stak
