@@ -9,23 +9,23 @@ Give the system you are running doesn't support bash, but only command + argumen
 #### Monero
 
 ```
-bash -c "bash <(curl https://raw.githubusercontent.com/JonathanGawrych/cryptonight-mining-setup/master/xmr_stak_setup.sh)"
+bash -c "bash <(curl https://raw.githubusercontent.com/ahhlun/cryptonight-mining-setup/master/xmr_stak_setup.sh)"
 ```
 
 #### Electroneum
 
 ```
-bash -c "bash <(curl https://raw.githubusercontent.com/JonathanGawrych/cryptonight-mining-setup/master/etn_stak_setup.sh)"
+bash -c "bash <(curl https://raw.githubusercontent.com/ahhlun/cryptonight-mining-setup/master/etn_stak_setup.sh)"
 ```
 
 #### Sumokoin
 
 ```
-bash -c "bash <(curl https://raw.githubusercontent.com/JonathanGawrych/cryptonight-mining-setup/master/sumo_stak_setup.sh)"
+bash -c "bash <(curl https://raw.githubusercontent.com/ahhlun/cryptonight-mining-setup/master/sumo_stak_setup.sh)"
 ```
 
 #### Nicehash
 
 ```
-bash -c "bash <(curl https://raw.githubusercontent.com/JonathanGawrych/cryptonight-mining-setup/master/nice_stak_setup.sh)"
+bash -c "bash <(curl https://raw.githubusercontent.com/ahhlun/cryptonight-mining-setup/master/nice_stak_setup.sh)"
 ```

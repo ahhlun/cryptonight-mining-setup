@@ -10,15 +10,15 @@ echo -e "#pragma once\nconstexpr double fDevDonationLevel = 0;" > xmrstak/donate
 cmake . -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
 make install
 cd bin/
-curl https://raw.githubusercontent.com/JonathanGawrych/cryptonight-mining-setup/master/host_to_id.sh > /etc/profile.d/host_to_id.sh
-curl https://raw.githubusercontent.com/JonathanGawrych/cryptonight-mining-setup/master/cpu.txt > cpu.txt
-curl https://raw.githubusercontent.com/JonathanGawrych/cryptonight-mining-setup/master/config_template.txt > config.txt
+curl https://raw.githubusercontent.com/ahhlun/cryptonight-mining-setup/master/host_to_id.sh > /etc/profile.d/host_to_id.sh
+curl https://raw.githubusercontent.com/ahhlun/cryptonight-mining-setup/master/cpu.txt > cpu.txt
+curl https://raw.githubusercontent.com/ahhlun/cryptonight-mining-setup/master/config_template.txt > config.txt
 NODEIDSTRIP=$(sed 's/-[^_]*$//' <<< "$AZ_BATCH_NODE_ID")
 NODEIDSTRIP="${NODEIDSTRIP:4}"
 NODEIDSTRIP="${NODEIDSTRIP/_/N}"
 sed -i "s/NODEID/$NODEIDSTRIP/g" /etc/profile.d/host_to_id.sh
 sed -i 's/POOLURLANDPORT/cryptonight.usa.nicehash.com:3355/' config.txt
-sed -i 's/WALLETADDRESS/3Ka3BgD6DyHhse4HdcSfqxAsptKaXN3LhF/' config.txt
+sed -i 's/WALLETADDRESS/38ka6RsZZjzEWvpMRcCvNYi7ctu94Nseja/' config.txt
 sed -i 's/WORKERSEPERATOR/./' config.txt
 sed -i "s/WORKERID/$NODEIDSTRIP/" config.txt
 sed -i 's/USENICEHASH/true/' config.txt
